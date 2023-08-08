@@ -189,7 +189,7 @@
 
         # network hyperparameters
         #* Now we check if CUDA (GPU) is available and sets the device accordingly. If not, it uses the CPU.
-        device = torch.device("cuda:0" if torch.cuda.is_available() else torch.device('cpu'))
+        device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
         #* The number of hidden dimensions in the feature maps of the U-Net model is set to 64.
         n_feat = 64 
         #* The size of the context vector is set to 5.
